@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {margin : 0px; font-weight: normal;}
+
+body, html {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background : linear-gradient(#FFD21F 0%, #FFCB05 25%, #F5C400 50%, #e0b400 75%, #CCA300);
+  font-family: 'Sigmar One', cursive;
+
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#sprites {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+  width: 100%;
+  margin: 5% 0 5% 0;
+ 
+}
+
+button {
+color: #ffffff;
+background: #003A70;
+padding: 20px;
+border: 4px solid #003A70;
+border-radius: 50%;
+display: inline-block;
+transition: all 0.4s ease 0s;
+box-shadow: 2px 2px 2px #343a40;
+cursor: pointer;
+}
+
+button:hover {
+  background: #3D7DCA;
+  border-color: #3D7DCA;
+  transition: all 0.4s ease 0s;
+  }
+
+
+#frame_sprites {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin: 5% 5% 5% 5%;
+  background-color: #FFF;
+  border: solid 1rem  #3D7DCA;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px black;
+} 
+
+ #img-sprites {
+  width: 100%;
+  height: 70%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  align-items: flex-start; 
+  width : 80%;
+  height: 25%;
+  background-color: #FFF;
+  border: solid 0.5rem  #F00000;
+  border-radius: 5%;
+  font-size: 0.6em;
+}
+
+.bloc-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.img-name, .img-stars{
+  width: 30px;
+  height: 30px;
+  margin-right: 5%;
+}
+
+#bloc_feature1 , #bloc_feature2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width : 100%;
+}
+
+@media screen and (min-width: 1025px){
+
+#sprites {
+height: 50%;
+}
+
+#frame_sprites {
+  width: 40%;
+  height: 100%;
+  border-radius: 2%;
+}
+
+#img-sprites {
+  width: 50%;
+  height: auto;
+}
+
+.img-name, .img-stars{
+  width: 50px;
+  height: auto;
+}
+
+  button {
+    font-size: 8vh;
+}
+
+.details {
+  height: 40%;
+  font-size: 1rem;
+  margin: 0 0 5% 0;
+  border: solid 1rem  #F00000;
+  border-radius: 2%;
+}
+
+#bloc_feature1 , #bloc_feature2{
+margin: 1% 0 1% 1%;
+}
+
+
+}
