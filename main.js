@@ -1,5 +1,4 @@
 let pokemonId = 1;
-let sound = document.getElementById("myAudio");
 
 
 function getData(id){
@@ -13,14 +12,12 @@ function getData(id){
 getData(pokemonId);
 
 function pokeSlideRight() {
-    sound.play(); 
     pokemonId ++;
     getData(pokemonId);
     
 }
 
 function pokeSlideLeft() {
-    sound.play(); 
     pokemonId --;
     getData(pokemonId);
 }
@@ -58,7 +55,7 @@ function pokeSlideLeft() {
             </div>
                 `
 
-    const pokemonDiv = document.querySelector('.pokemon')
+    const pokemonDiv = document.querySelector('.glass')
     pokemonDiv.innerHTML = html
 }
 
